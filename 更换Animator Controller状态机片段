@@ -1,0 +1,12 @@
+unity  动态加载 Animator 组件 的Controller
+
+ 
+
+public Animator animator; // 直接拖拽，引用
+
+string strPath = "FXV2/SoulAnimator/soul_had_animator_" + quality;  // 路径
+
+RuntimeAnimatorController runAnim = (RuntimeAnimatorController) Resources.Load(strPath); 
+// 加载，设置为RuntimeAnimatorController类型
+
+animDiBan.runtimeAnimatorController = runAnim; // 赋值
